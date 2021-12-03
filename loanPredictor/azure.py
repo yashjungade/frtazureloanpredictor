@@ -40,8 +40,8 @@ def userInput(g1, m1, d1, e1, s1, a1, c1, h1, p1, l1):
 
     body = str.encode(json.dumps(data))
 
-    url = 'http://42d2c268-c6ef-4463-acb9-9f6f10ce105f.centralindia.azurecontainer.io/score'
-    api_key = 'xPNpIQzZKgEEqdJWPgU4uhdvNQ19Is59' # Replace this with the API key for the web service
+    url = 'Your Azure Url'
+    api_key = 'Your API Key' # Replace this with the API key for the web service
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib.request.Request(url, body, headers)
