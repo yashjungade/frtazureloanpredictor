@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eligible Loan Amount Predictor</title>
+    <link rel="icon" href="{{url_for('static', filename='Images/logo.png')}}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='data.css')}}">
+</head>
+<body>
+<div class="result">
+    <img class="logo" src="{{url_for('static', filename='Images/logo.png')}}"></img>
+{% for key,value in form_data.items() %}
+<h2> {{key}}: Rs. {{value}} /- per month</h2>
+{% endfor %}
+<br><a href="/"><button>Check Again</button></a>
+    <h1>Contact</h1>
+    <a href="https://www.linkedin.com/in/yash-jungade-731651191/" target="/"><img class="skill" src="{{url_for('static', filename='Images/In.png')}}"></img></a>
+    <a href="https://github.com/yashjungade" target="/"><img class="skill" src="{{url_for('static', filename='Images/git.png')}}"></img></a>
+    <a href="mailto:yjungade123@gmail.com" target="/"><img class="skill" src="{{url_for('static', filename='Images/mail.png')}}"></img></a>
+    <a href="https://twitter.com/YashJungade" target="/"><img class="skill" src="{{url_for('static', filename='Images/twitter.png')}}"></img></a>
+    <a href="https://www.instagram.com/yjungade/" target="/"><img class="skill" src="{{url_for('static', filename='Images/insta.png')}}"></img></a>
+    <h2>@ Yash Jungade</h2>
+</div>
+</body>
+</html>

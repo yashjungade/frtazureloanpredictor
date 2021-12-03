@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Eligible Loan Amount Predictor</title>
+    <link rel="icon" href="{{url_for('static', filename='Images/logo.png')}}"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css')}}">
+</head>
+<body>
+<img class="logo" src="{{url_for('static', filename='Images/logo.png')}}"></img>
+<h1>ELIGIBLE LOAN AMOUNT PREDICTOR</h1>
+<form action="/data" method = "POST">
+    <div class="formStyle">
+    <p>What is your gender?</p>
+    <input type="radio" name = "Gender" id="g1" value=0>
+    <label for="g1">Male</label>
+    <input type="radio" name = "Gender" id="g2" value=1>
+        <label for="g2">Female</label>
+    <p>Are you married?</p>
+    <input type="radio" name = "Married" id="m1" value=1>
+    <label for="m1">Yes</label>
+    <input type="radio" name = "Married" id="m2" value=0>
+    <label for="m2">No</label>
+    <p>How many dependants you have?</p>
+    <input type="radio" name = "Dependants" id="d1" value=0>
+    <label for="d1">0</label>
+    <input type="radio" name = "Dependants" id="d2" value=1>
+    <label for="d2">1</label>
+    <input type="radio" name = "Dependants" id="d3" value=2>
+    <label for="d3">2</label>
+    <input type="radio" name = "Dependants" id="d4" value=4>
+    <label for="d4">3+</label>
+    <p>Are you graduated?</p>
+    <input type="radio" name = "Education" id="e1" value=1>
+    <label for="e1">Yes</label>
+    <input type="radio" name = "Education" id="e2" value=0>
+    <label for="e2">No</label>
+    <p>Are you self-employed?</p>
+    <input type="radio" name = "Self_Employed" id="s1" value=1>
+    <label for="s1">Yes</label>
+    <input type="radio" name = "Self_Employed" id="s2" value=0>
+    <label for="s2">No</label>
+    <p>What is your annual income? Enter in Rupees.</p><input type = "number" min="100000" max="1000000" name = "ApplicantIncome" />
+    <p>What is the annual income of your co-applicant? Enter 0 if no co-applicant. Enter in Rupees.</p>
+    <input type = "number" max="1000000" name = "CoapplicantIncome" />
+    <p>Is your credit history available?</p>
+    <input type="radio" name = "Credit_History" id="h1" value=1>
+    <label for="h1">Yes</label>
+    <input type="radio" name = "Credit_History" id="h2" value=0>
+    <label for="h2">No</label>
+    <p>Where is your property?</p>
+    <input type="radio" name = "Property_Area" id="p1" value=0>
+    <label for="p1">Urban</label>
+    <input type="radio" name = "Property_Area" id="p2" value=1>
+    <label for="p2">Semi-Urban</label>
+    <input type="radio" name = "Property_Area" id="p3" value=2>
+    <label for="p3">Rural</label>
+    <p>
+    <label for="t">Loan Amount Term: </label>
+    <select name="Loan_Amount_Term" id="t">
+        <option value=60>60 Days</option>
+        <option value=120>120 Days</option>
+        <option value=180>180 Days</option>
+        <option value=240>240 Days</option>
+        <option value=300>300 Days</option>
+        <option value=360>360 Days</option>
+        <option value=420>420 Days</option>
+        <option value=480>480 Days</option>
+    </select></p>
+    <p><button><input type = "submit" value = "Submit" /></button></p>
+    </div>
+</form>
+<div>
+    <h1>Contact</h1>
+    <a href="https://www.linkedin.com/in/yash-jungade-731651191/" target="/"><img class="skill" src="{{url_for('static', filename='Images/In.png')}}"></img></a>
+    <a href="https://github.com/yashjungade" target="/"><img class="skill" src="{{url_for('static', filename='Images/git.png')}}"></img></a>
+    <a href="mailto:yjungade123@gmail.com" target="/"><img class="skill" src="{{url_for('static', filename='Images/mail.png')}}"></img></a>
+    <a href="https://twitter.com/YashJungade" target="/"><img class="skill" src="{{url_for('static', filename='Images/twitter.png')}}"></img></a>
+    <a href="https://www.instagram.com/yjungade/" target="/"><img class="skill" src="{{url_for('static', filename='Images/insta.png')}}"></img></a>
+    <h2>@ Yash Jungade</h2>
+</div>
+</body>
+</html>
